@@ -15,8 +15,8 @@ public class BookController {
     BookService bookService;
 
     @RequestMapping("book/{bid}")
-    Book findBookById(@PathVariable("bid") int bid, HttpServletRequest request){
-        System.out.println(request.getHeaders("Test"));
+    Book findBookById(@PathVariable("bid") int bid){
+        System.out.println("Hello,Book-Service");
         return bookService.getBookById(bid);
     }
 }

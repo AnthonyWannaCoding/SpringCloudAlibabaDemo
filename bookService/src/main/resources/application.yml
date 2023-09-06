@@ -1,0 +1,18 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: bookservice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #配置数据库链接
+    url: jdbc:mysql://localhost:3306/springclouddemo?useUnicode=true&characterEncoding=utf8 #DB_HOST，DB_PORT，DB_NAME都是环境变量
+    #配置数据库用户名
+    username: root
+    #配置数据库密码
+    password: Zzy@123456
+  cloud:
+    nacos:
+      discovery:
+        # 配置Nacos注册中心地址
+        server-addr: localhost:8848
