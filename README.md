@@ -1,1 +1,1 @@
-TECH STACK:SpringCloudAlibaba,Nacos
+TECH STACK:SpringCloudAlibaba,Nacos,Sentinel
