@@ -1,6 +1,12 @@
 server:
   port: 8101
 spring:
+  session:
+    # 存储类型修改为redis
+    store-type: redis
+    redis:
+      # Redis服务器的信息，该咋写咋写
+      host: 127.0.0.1
   cloud:
     nacos:
       discovery:
